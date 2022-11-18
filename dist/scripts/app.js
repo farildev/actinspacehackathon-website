@@ -19,7 +19,7 @@ $('.team__carousel').slick({
     autoplay: true,
     centerPadding: '15px',
     arrows: false,
-    dots:true,
+    dots:false,
     autoplaySpeed:1000,
     centerMode:true,
     responsive: [
@@ -32,7 +32,7 @@ $('.team__carousel').slick({
         },
       },
       {
-        breakpoint:992,
+        breakpoint:1024,
         settings: {
           slidesToScroll: 1,
           slidesToShow: 2,
@@ -51,7 +51,6 @@ $('.team__carousel').slick({
           slidesToScroll: 1,
           slidesToShow: 1,
           centerMode: true,
-          dots: false,
         },
       },
     ]
