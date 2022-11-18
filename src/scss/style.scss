@@ -33,7 +33,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
     .navbar{
         display: flex;
         justify-content: space-between;
@@ -74,5 +74,54 @@ header{
     }
 }
 main{
+    .banner__section{
+        margin-top: 150px;
+        .banner__main{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .banner__left{
+                max-width: 60%;
+                .banner__header{
+                    h1{
+                        font-size: 64px;
+                        font-weight: 500;
+                        line-height: 80px;
+                    }
+                }
+                .banner__text{
+                    margin-top: 40px;
+                    p{
+                        font-size: 18px;
+                        font-weight: 400;
 
+                    }
+                }
+                .banner__btn{
+                    margin-top:40px;
+                    button{
+                        margin: 0 5px;
+                        cursor: pointer;
+                        padding: 1rem 2.5rem;
+                        outline: none;
+                        border: none;
+                        font-size: 16px;
+                        font-family: 'Poppins',sans-serif;
+                        border-radius: 8px;
+                        color: $light-color;
+                        background-color: $main-color;
+                    }
+                }
+            }
+            .banner__right{
+                max-width: 38%;
+                .banner__img{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
 }
