@@ -561,6 +561,7 @@ footer{
         width: 550px;
         height: 550px;
         left: -200px;
+        opacity: 30%;
     }
     .circle-effect-second{
         width: 500px;
@@ -594,7 +595,8 @@ footer{
                 .banner__left{
                     .banner__header{
                         h1{
-                            font-size: 54px;
+                            font-size: 48px;
+                            line-height: 72px;
                         }
                     }
                     .banner__text{
@@ -609,16 +611,37 @@ footer{
             .about__main{
                 .about__header{
                     h1{
-
+                        font-size: 32px;
                     }
                 }
                 .about__text{
-
+                    width: 100%;
+                    p{
+                        font-size: 14px;
+                    }
                 }
                 .about__content{
                     img{
                         max-width: 300px;
                     }
+                }
+            }
+        }
+        .team__section{
+            .team__main{
+                .team__header{
+                    h1{
+                        font-size: 32px;
+                    }
+                }
+                .team__text{
+                    width: 100%;
+                    p{
+                        font-size: 14px;
+                    }
+                }
+                .team__carousel{
+                    margin-top: 50px;
                 }
             }
         }
@@ -661,6 +684,13 @@ footer{
                     width: 100%;
                     p{
                         font-size: 14px;
+                    }
+                }
+                .about__content{
+                    display: flex;
+                    flex-direction: column;
+                    img{
+                        width: 220px;
                     }
                 }
             }
@@ -755,7 +785,8 @@ footer{
         }
     }
 }
-@media (max-width: 360px){
-
+@media (max-width: 390px){
+    main{
+        
+    }
 }
-
