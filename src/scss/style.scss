@@ -338,22 +338,23 @@ main{
                             object-position: center;
                         }
                     }
-                    .team__name{
-                        margin-top: 20px;
+                    .member__name{
+                        margin-top: 15px;
                         width: 100%;
                         h2{
-                            color: $light-color;
+                            color: $dark-color;
                             font-style: normal;
                             font-weight: 500;
                             font-size: 24px;
-                            line-height: 45px;
+                            line-height: 35px;
                         }
                     }
-                    .team__category{
+                    .member__category{
                         span{
-                            font-size: 14px;
+                            font-size: 16px;
                             color: $light-color;
                             font-weight: 500;
+                            color: $main-color  ;
                         }
                     }
                 }
@@ -715,14 +716,14 @@ footer{
                         .member__img{
                             height: 300px;
                         }
-                        .team__name{
+                        .member__name{
                             h2{
                                 font-size: 18px;
                             }
                         }
-                        .team__category{
+                        .member__category{
                             span{
-
+                                font-size: 14px;
                             }
                         }
                     }
@@ -786,7 +787,85 @@ footer{
     }
 }
 @media (max-width: 390px){
+    .container{
+        padding: 0 20px;
+    }
+    header{
+        .navbar{
+            .nav__logo{
+                a{
+                    img{
+                        width: 40px;
+                    }
+                }
+            }
+            .nav__btn{
+                .mobile-menu-burger{
+                    .bx{
+                        font-size: 48px;
+                    }
+                }
+            }
+        }
+    }
     main{
-        
+        .banner__section{
+            margin-top: 80px;
+            .banner__main{
+                .banner__left{
+                    .banner__header{
+                        h1{
+                            font-size: 32px;
+                            line-height: 48px;
+                        }
+                    }
+                    .banner__text{
+                        p{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        .about__section{
+            .about__main{
+                .about__header{
+                    h1{
+                        font-size: 22px;
+                    }
+                }
+                .about__text{
+                    p{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        .team__section{
+            .team__main{
+                .team__header{
+                    h1{
+                        font-size: 22px;
+                    }
+                }
+                .team__text{
+                    p{
+                        font-size: 12px;
+                    }
+                }
+                .team__carousel{
+                    .team__item{
+                        .member__img{
+                            height: 250px;
+                        }
+                        .member__category{
+                            span{
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
