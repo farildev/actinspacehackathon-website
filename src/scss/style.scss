@@ -59,6 +59,7 @@ html{
                 }
             }
             .mobile__menu-close{
+                cursor: pointer;
                 i{
                     color: $light-color;
                     font-size: 64px;
