@@ -6,7 +6,7 @@ $('.team__carousel').slick({
     centerPadding: '15px',
     arrows: false,
     dots:true,
-    autoplaySpeed:2000,
+    autoplaySpeed:1000,
     centerMode:true,
     responsive: [
       {
