@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
-
+$main-color: #057056;
+$light-color: #ffffff;
+$dark-color: #1c1c1c;
 
 *{
     padding: 0;
@@ -26,6 +28,7 @@ html{
     font-family: 'Poppins',sans-serif;
 }
 header{
+    background-color: $main-color;
     position: sticky;
     top: 0;
     left: 0;
@@ -48,7 +51,7 @@ header{
                 margin: 25px;
                 .nav__link{
                     font-size: 18px;
-                    color: #000;
+                    color: $light-color;
                     font-weight: 400;
                     line-height: 30px;
                 }
@@ -56,6 +59,7 @@ header{
         }
         .nav__btn{
             .btn{
+                margin: 0 5px;
                 cursor: pointer;
                 padding: 1rem 2.5rem;
                 outline: none;
@@ -63,6 +67,8 @@ header{
                 font-size: 16px;
                 font-family: 'Poppins',sans-serif;
                 border-radius: 8px;
+                color: $main-color;
+                background-color: $light-color;
             }
         }
     }
