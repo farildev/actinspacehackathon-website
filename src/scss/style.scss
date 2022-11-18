@@ -75,13 +75,13 @@ header{
 }
 main{
     .banner__section{
-        margin-top: 150px;
+        margin-top: 100px;
         .banner__main{
             display: flex;
             justify-content: space-between;
             align-items: center;
             .banner__left{
-                max-width: 60%;
+                max-width: 50%;
                 .banner__header{
                     h1{
                         font-size: 64px;
@@ -114,11 +114,10 @@ main{
                 }
             }
             .banner__right{
-                max-width: 38%;
+                max-width: 45%;
                 .banner__img{
-                    width: 100%;
                     img{
-                        width: 100%;
+                        width: 700px;
                     }
                 }
             }
