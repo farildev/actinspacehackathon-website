@@ -24,9 +24,47 @@ li{
 
 body,
 html{
+    position: relative;
     height: 100%;
     font-family: 'Poppins',sans-serif;
 }
+
+.circle-effect-first{
+    position: absolute;
+    left: -200px;
+    top: 20%;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: $main-color;
+    filter: blur(300px);
+    z-index: 1;
+}
+.circle-effect-second{
+    position: absolute;
+    right: -400px;
+    top: 900px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: $main-color;
+    filter: blur(300px);
+    z-index: -1;
+}
+.circle-effect-third{
+    position: absolute;
+    top: 280%;
+    left: -300px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: $main-color;
+    filter: blur(300px);
+    z-index: -1;
+    
+}
+
+
 header{
     background-color: $main-color;
     position: sticky;
@@ -67,9 +105,30 @@ header{
                 font-size: 16px;
                 font-family: 'Poppins',sans-serif;
                 border-radius: 8px;
-                color: $main-color;
-                background-color: $light-color;
+                transition: 300ms all ease-in-out;
             }
+            .log-btn{
+                background-color: transparent;
+                border: 1px solid $light-color;
+                color: $light-color;
+                &:hover{
+                    background: $light-color;
+                    color: #057056;
+                    transition: 300ms all ease-in-out;
+                }
+            }
+            .reg-btn{
+                background: $light-color;
+                color: $main-color;
+                transition: 300ms all ease-in-out;
+                border: 1px solid $light-color;
+                &:hover{
+                    background-color: transparent;
+                    color: $light-color;
+                    transition: 300ms all ease-in-out;
+                }
+            }
+
         }
     }
 }
@@ -102,7 +161,7 @@ main{
                     button{
                         margin: 0 5px;
                         cursor: pointer;
-                        padding: 1rem 2.5rem;
+                        padding: 1.5rem 2.5rem;
                         outline: none;
                         border: none;
                         font-size: 16px;
@@ -233,7 +292,7 @@ main{
 }
 footer{
     margin-top: 200px;
-    background-color: #111111;
+    background-color: $main-color;
     padding: 100px 0;
     .footer__main{
         display: flex;
@@ -329,3 +388,27 @@ footer{
         }
     }
 }
+
+@media (max-width: 1280px){
+
+}
+
+@media (max-width: 1024px){
+    header{
+        .navbar{
+            .nav__main{
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+
+}
+@media (max-width: 480px){
+
+}
+@media (max-width: 360px){
+
+}
+
