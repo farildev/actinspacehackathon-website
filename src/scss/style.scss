@@ -28,6 +28,15 @@ html{
     position: relative;
     height: 100%;
     font-family: 'Poppins',sans-serif;
+    &::-webkit-scrollbar{
+        width: 10px;
+        background: $light-color;
+        padding: 0 10px;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: $main-color;
+        border: 1px solid $light-color;
+    }
 }
 
 .mobile__menu{
@@ -73,7 +82,24 @@ html{
         }
         .nav__main{
             .nav__item{
+                position: relative;
                 margin: 40px 0;
+                &::after{
+                    background: none repeat scroll 0 0 transparent;
+                    bottom: -5px;
+                    content: "";
+                    display: block;
+                    height: 3px;
+                    left: 50%;
+                    position: absolute;
+                    background: $light-color;
+                    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                    width: 0;
+                }
+                &:hover::after{
+                    width: 100%; 
+                    left: 0; 
+                }
                 .nav__link{
                     color: $light-color;
                     font-size: 48px;
@@ -106,7 +132,7 @@ html{
     border-radius: 50%;
     background: $main-color;
     filter: blur(500px);
-    z-index: 1;
+    z-index: -1;
 }
 
 .circle-effect-second{
@@ -159,39 +185,6 @@ header{
             justify-content: space-between;
             align-items: center;
             display: none;
-            // .btn{
-            //     margin: 0 5px;
-            //     cursor: pointer;
-            //     padding: 1rem 2.5rem;
-            //     outline: none;
-            //     border: none;
-            //     font-size: 16px;
-            //     font-family: 'Poppins',sans-serif;
-            //     border-radius: 8px;
-            //     transition: 300ms all ease-in-out;
-            // }
-            // .log-btn{
-            //     background-color: transparent;
-            //     border: 1px solid $light-color;
-            //     color: $light-color;
-            //     &:hover{
-            //         background: $light-color;
-            //         color: #057056;
-            //         transition: 300ms all ease-in-out;
-            //     }
-            // }
-            // .reg-btn{
-            //     background: $light-color;
-            //     color: $main-color;
-            //     transition: 300ms all ease-in-out;
-            //     border: 1px solid $light-color;
-            //     margin-right: 15px;
-            //     &:hover{
-            //         background-color: transparent;
-            //         color: $light-color;
-            //         transition: 300ms all ease-in-out;
-            //     }
-            // }
             .mobile-menu-burger{
                 display: none;
                 cursor: pointer;
@@ -823,6 +816,11 @@ footer{
                         p{
                             font-size: 12px;
                         }
+                    }
+                }
+                .banner__right{
+                    .banner__img{
+                        margin-top: 20px;
                     }
                 }
             }

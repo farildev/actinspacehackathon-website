@@ -55,3 +55,6 @@ $('.team__carousel').slick({
       },
     ]
   });
+
+
+  AOS.init();
