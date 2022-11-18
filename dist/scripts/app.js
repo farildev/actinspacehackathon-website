@@ -1,3 +1,17 @@
+// ;
+const mobileMenu = document.querySelector('.mobile__menu');
+const menuOpen = document.querySelector('.mobile-menu-burger');
+const menuClose = document.querySelector('.mobile__menu-close');
+
+menuOpen.addEventListener('click', () => {
+  mobileMenu.classList.toggle('menu-active')
+  // document.querySelector('body').style.overflow = 'hidden'
+})
+menuClose.addEventListener('click', () => {
+  mobileMenu.classList.remove('menu-active');
+  // document.querySelector('body').style.overflow = 'auto'
+})
+
 $('.team__carousel').slick({
     infinite: true,
     slidesToShow: 3,
