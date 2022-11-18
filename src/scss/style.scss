@@ -172,6 +172,9 @@ main{
                     margin: 0 25px;
                     max-width: 400px;
                     padding: 10px;
+                    &:first-child{
+                        margin: 0 15px;
+                    }
                     .member__img{
                         position: relative;
                         object-fit: cover;

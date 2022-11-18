@@ -3,7 +3,7 @@ $('.team__carousel').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    centerPadding: '25px',
+    centerPadding: '15px',
     arrows: false,
     dots:true,
     autoplaySpeed:2000,
