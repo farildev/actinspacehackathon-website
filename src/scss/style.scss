@@ -295,12 +295,38 @@ main{
                 align-items: center;
                 flex-wrap: wrap;
                 img{
-                    max-width: 400px;
+                    width: 400px;
                     transition: 800ms all ease-in-out;
                     &:hover{
                         transition: 800ms all ease-in-out;
                         transform: translateX(5%);
                         cursor: pointer;
+                    }
+                }
+            }
+            .template__link{
+                margin-top: 40px;
+                width: 100%;
+                a{
+                    button{
+                        margin: 0 5px;
+                        cursor: pointer;
+                        padding: 1.5rem 2.5rem;
+                        outline: none;
+                        border: none;
+                        font-size: 16px;
+                        font-family: 'Poppins',sans-serif;
+                        border-radius: 8px;
+                        color: $main-color;
+                        background-color: transparent;
+                        border: 2px solid $main-color;
+                        transition: 300ms all ease-in-out;
+                        &:hover{
+                            background-color: $main-color;
+                            border: 2px solid $main-color;
+                            transition: 300ms all ease-in-out;
+                            color: $light-color;
+                        }
                     }
                 }
             }
@@ -750,6 +776,16 @@ footer{
                         width: 220px;
                     }
                 }
+                .template__link{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    a{
+                        button{
+                            padding: 1rem 2rem;
+                        }
+                    }
+                }
             }
         }
         .team__section{
@@ -898,6 +934,11 @@ footer{
                 .about__text{
                     p{
                         font-size: 12px;
+                    }
+                }
+                .about__content{
+                    img{
+                        width: 200px;
                     }
                 }
             }

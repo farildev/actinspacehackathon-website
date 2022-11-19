@@ -5,11 +5,11 @@ const menuClose = document.querySelector('.mobile__menu-close');
 
 menuOpen.addEventListener('click', () => {
   mobileMenu.classList.toggle('menu-active')
-  // document.querySelector('body').style.overflow = 'hidden'
+  document.querySelector('body').style.overflow = 'hidden'
 })
 menuClose.addEventListener('click', () => {
   mobileMenu.classList.remove('menu-active');
-  // document.querySelector('body').style.overflow = 'auto'
+   document.querySelector('body').style.overflow = 'auto'
 })
 
 /*NavLink Scrool Anchor Point Configuration */
