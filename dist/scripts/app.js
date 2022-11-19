@@ -12,6 +12,17 @@ menuClose.addEventListener('click', () => {
   // document.querySelector('body').style.overflow = 'auto'
 })
 
+/*NavLink Scrool Anchor Point Configuration */
+const anchorPoint = document.querySelectorAll('a[href^="#"]');
+anchorPoint.forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior : "smooth"
+    })
+  })
+});
+
 $('.team__carousel').slick({
     infinite: true,
     slidesToShow: 3,
