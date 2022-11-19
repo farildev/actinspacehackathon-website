@@ -133,6 +133,8 @@ html{
     background: $main-color;
     filter: blur(500px);
     z-index: -1;
+    opacity: 20%;
+    
 }
 
 .circle-effect-second{
@@ -145,7 +147,7 @@ html{
     background: $main-color;
     filter: blur(300px);
     z-index: -1;
-    
+    opacity: 20%;
 }
 
 
@@ -557,7 +559,7 @@ footer{
             .mobile__top{
                 .mobile__logo{
                     img{
-                        width: 58px;
+                        width: 80px;
                     }
                 }
                 .mobile__menu-close{
@@ -595,7 +597,7 @@ footer{
     header{
         .navbar{
             .nav__logo{
-                width: 50px;
+                width: 80px;
                 a{
                     img{
                        width: 100%; 
@@ -673,6 +675,36 @@ footer{
     }
 }
 @media (max-width: 480px){
+    .mobile__menu{
+        .mobile__menu__main{
+            .mobile__top{
+                .mobile__logo{
+                    img{
+                        width: 80px;
+                    }
+                }
+                .mobile__menu-close{
+                    i{
+                        font-size: 58px;
+                    }
+                }
+            }
+            .nav__main{
+                .nav__item{
+                    .nav__link{
+                        font-size: 24px;
+                    }
+                }
+            }
+            .nav__social{
+                a{
+                    i{
+                        font-size: 32px;
+                    }
+                }
+            }
+        }
+    }
     main{
         .banner__section{
             .banner__main{
@@ -760,7 +792,7 @@ footer{
             .footer__left{
                 .footer__logo{
                     img{
-                        width: 50px;
+                        width: 80px;
                     }
                 }
                 .footer__copyright{
